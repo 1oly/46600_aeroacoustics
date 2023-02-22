@@ -1,7 +1,7 @@
 # Aeroacoustics 46600
 Introduction to julia for the course [Aeroacoustics](https://kurser.dtu.dk/course/46600) at the Technical University of Denmark.
 
-This tutorial will guide with through installing julia and getting familiar with the AeroAcoustics.jl package.
+This tutorial will guide you through installing julia and getting familiar with the AeroAcoustics.jl package.
 
 ## Installation
 [1. Install julia on your platform](https://julialang.org/downloads/)  
@@ -12,3 +12,4 @@ pkg> add AeroAcoustics HDF5 PyPlot
 ```
 Then locate ´quick_start.jl´ and run line-by-line in vscode.
 
+A Jupyter notebook is also available.
