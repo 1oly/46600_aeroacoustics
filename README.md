@@ -15,7 +15,7 @@ Then locate ´quick_start.jl´ and run line-by-line in vscode.
 A Jupyter notebook is also available.
 
 ## Data
-The data provided in the `/data` directory contains cross-spectral matrices computed from acoustic array measurements conducted in [PLCT](https://plct.dk). The airfoil is a NACA63018 with a chord length of 1m and a span of 2m.
+The data provided in the `/data` directory contains cross-spectral matrices computed from acoustic array measurements conducted in [PLCT](https://plct.dk). The airfoil is a NACA63018 with a chord length of 0.9m and a span of 2m.
 
 | Filename  | U0 [m/s] | Mach No. | AoA [deg] | Cl | Cd | Cm |
 | ------------- | ------------- | --------------| ------- | ----| ---- | ---- |
