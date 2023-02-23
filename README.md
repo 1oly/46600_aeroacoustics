@@ -5,7 +5,7 @@ This tutorial will guide you through installing julia and getting familiar with 
 
 ## Installation
 [1. Install julia on your platform](https://julialang.org/downloads/)  
-[2. VScode editor](https://github.com/julia-vscode/julia-vscode#installing-juliavs-codevs-code-julia-extension)  
+[2. Install VScode editor and julia extension](https://github.com/julia-vscode/julia-vscode#installing-juliavs-codevs-code-julia-extension)  
 3. Install additional packages to run `quick_start.jl` script. Enter package-manager by pressing `]`
 ```
 pkg> add AeroAcoustics HDF5 PyPlot
@@ -13,3 +13,14 @@ pkg> add AeroAcoustics HDF5 PyPlot
 Then locate ´quick_start.jl´ and run line-by-line in vscode.
 
 A Jupyter notebook is also available.
+
+## Data
+The data provided in the `/data` directory contains cross-spectral matrices computed from acoustic array measurements conducted in [PLCT](https://plct.dk). The airfoil is a NACA63018 with a chord length of 1m and a span of 2m.
+
+| Filename  | U0 [m/s] | Mach # [-] | AoA [deg] |
+| ------------- | ------------- | --------------| ------- |
+| NACA63018_u0_50mps_aoa_0_clean.h5  | 50 | 0.1508  | 0 |
+| NACA63018_u0_80mps_aoa_0_clean.h5  | 80 | 0.2404  | 0 |
+| NACA63018_u0_80mps_aoa_6_clean.h5  | 80 | 0.2412  | 6 |
+
+The cross-spectral matrices are computed from 20 second time samples of 84 microphones using Welch's method with a Hanning window, a segment size of 4096 and 50% overlap.
