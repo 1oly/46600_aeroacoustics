@@ -17,7 +17,7 @@ A Jupyter notebook is also available.
 ## Data
 The data provided in the `/data` directory contains cross-spectral matrices computed from acoustic array measurements conducted in [PLCT](https://plct.dk). The airfoil is a NACA63018 with a chord length of 1m and a span of 2m.
 
-| Filename  | U0 [m/s] | Mach # [-] | AoA [deg] | Cl [-] | Cd [-] | Cm [-]
+| Filename  | U0 [m/s] | Mach No. | AoA [deg] | Cl | Cd | Cm |
 | ------------- | ------------- | --------------| ------- | ----| ---- | ---- |
 | NACA63018_u0_50mps_aoa_0_clean.h5  | 50 | 0.1508  | 0 | 0.005 | 0.003 | -0.001
 | NACA63018_u0_80mps_aoa_0_clean.h5  | 80 | 0.2404  | 0 | -0.008 | 0.005 | 0
