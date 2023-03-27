@@ -45,6 +45,9 @@ steeringvectors!(E)
 # where the "!" mutates the environment `E` and stores the steering vectors associated with the Environment. 
 # If a flow field is defined in the environment, the correct steering vectors will automatically be calculated, 
 # or we can define our own function `my_custom_steeringvectors!(E)` (wink, wink)...
+############# CUSTOM IMPLEMENTATION #####################
+# include("my_awesome_steeringvectors.jl)
+# my_custom_steeringvectors!(E)
 
 # Next, we calculate the beamforming image:
 b = beamforming(E)
@@ -86,7 +89,9 @@ E_flow = Environment(
 
 # Now, we need to assign steering vectors to the environment with a flow correction.
 steeringvectors!(E_flow)
-
+############# CUSTOM IMPLEMENTATION ####################
+# include("my_awesome_steeringvectors.jl)
+# my_custom_steeringvectors!(E_flow)
 # Next, we calculate the new (flow-corrected) beamforming image:
 b_flow = beamforming(E_flow)
 fc = 2000
