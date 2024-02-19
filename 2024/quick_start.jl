@@ -43,11 +43,7 @@ E = Environment(
 # and the microphone locations in `micgeom`, this is done in a simple manner:
 steeringvectors!(E)
 # where the "!" mutates the environment `E` and stores the steering vectors associated with the Environment. 
-# If a flow field is defined in the environment, the correct steering vectors will automatically be calculated, 
-# or we can define our own function `my_custom_steeringvectors!(E)` (wink, wink)...
-############# CUSTOM IMPLEMENTATION #####################
-# include("my_awesome_steeringvectors.jl)
-# my_custom_steeringvectors!(E)
+# If a flow field is defined in the environment, the correct steering vectors will automatically be calculated.
 
 # Next, we calculate the beamforming image:
 b = beamforming(E)
@@ -65,7 +61,9 @@ pcolormesh(E.rx,E.ry,bdB',vmax=maxdb,vmin=maxdb-dynrange)
 PyPlot.plot([0.05,0.05],[-1,1],alpha=1,color="magenta") # TE position
 x1,x2,y1,y2 = int_region
 PyPlot.plot([x1,x2,x2,x1,x1],[y1,y1,y2,y2,y1], alpha=1,color="magenta") # integration region square
-colorbar() 
+colorbar()
+xlabel("x [m]")
+ylabel("y [m]")
 title("NACA63018, no flow correction, freq = $(fc) Hz")
 gcf()
 
@@ -89,9 +87,6 @@ E_flow = Environment(
 
 # Now, we need to assign steering vectors to the environment with a flow correction.
 steeringvectors!(E_flow)
-############# CUSTOM IMPLEMENTATION ####################
-# include("my_awesome_steeringvectors.jl)
-# my_custom_steeringvectors!(E_flow)
 # Next, we calculate the new (flow-corrected) beamforming image:
 b_flow = beamforming(E_flow)
 fc = 2000
@@ -107,6 +102,8 @@ PyPlot.plot([0.05,0.05],[-1,1],alpha=1,color="magenta")
 x1,x2,y1,y2 = int_region
 PyPlot.plot([x1,x2,x2,x1,x1],[y1,y1,y2,y2,y1], alpha=1,color="magenta")
 colorbar()
+xlabel("x [m]")
+ylabel("y [m]")
 title("NACA63018, with flow correction, freq = $(fc) Hz")
 gcf()
 
@@ -119,4 +116,6 @@ semilogx(SPI_srcint.fc,SPL.(SPI_srcint),label="no flow correction")
 semilogx(SPI_srcint_flow.fc,SPL.(SPI_srcint_flow),label="with flow correction")
 legend()
 grid(true)
+xlabel("Frequency [Hz]")
+ylabel("Integrated spectrum [dB]")
 gcf()

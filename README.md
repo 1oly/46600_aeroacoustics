@@ -7,7 +7,5 @@ This tutorial will guide you through installing julia and getting familiar with 
 [1. Install julia on your platform](https://julialang.org/downloads/)  
 [2. Install VScode editor and julia extension](https://github.com/julia-vscode/julia-vscode#installing-juliavs-codevs-code-julia-extension)  
 (If it's not working try adding (on Windows) `“C:\Users\[MY_USER]\AppData\Local\Programs\Julia-1.10.1\bin\julia.exe”` to VScode julia extension.)
-3. To run script, install additional packages: Enter package-manager by pressing `]`
-```
-pkg> add AeroAcoustics HDF5 PyPlot
-```
+
+Navigate to course year folder and run `quick_start.jl` or Jupyter notebook.
