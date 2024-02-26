@@ -23,6 +23,12 @@ Then locate ´quick_start.jl´ and run line-by-line in vscode.
 
 A Jupyter notebook is also available.
 
+### Problems with python?
+If you have issues with python, there is also a script to circumvent the python problems `quick_start_2024.jl`, you'll need to add the `Plots` package instead of PyPlot:
+```
+pkg> add AeroAcoustics HDF5 Plots
+``` 
+
 ## Data
 The data provided in the `/data` directory contains cross-spectral matrices computed from acoustic array measurements conducted in [PLCT](https://plct.dk). The airfoil is a NACA63018 with a chord length of 0.9m and a span of 2m.
 
