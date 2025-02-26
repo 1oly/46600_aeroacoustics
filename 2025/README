@@ -1,0 +1,14 @@
+# Assignment 2025
+The `/BPM` folder contains Python code translated from: https://github.com/byuflowlab/BPM.jl/blob/b5708e2284e17384c8a0957b72b6da181b90fe04/src/BPM.jl#L582
+The code is simplified and contains only trailing edge noise without stall noise effects.
+
+The `/data` folder contains
+
+- `bl_thickness_FFA.csv`: Bounday layer thickness computed from 2D RANS (Ellipsys2D). Clean (`tr`) and tripped (`tu`) surface conditions simulated.
+- `BLthickness_naca.csv`: Bounday layer thickness computed from 2D RANS (Ellipsys2D). Clean surface condition.
+- `FFA_W3_211_coords.csv`: Airfoil coordinates of FFA profile.
+- `NACA63018_coords.csv`: Airfoil coordinates NACA63018 profile.
+- `NACA63018_windtunnel.xlsx`: Acoustic and aerodynamic results from windtunnel campaign.
+- `FFA_W3_211_windtunnel.xlsx`: Acoustic and aerodynamic results from windtunnel campaign.
+
+The acoustic results are given as integrated spectra in 1/3 octave bands, scaled to 1m span, at observer distance 2.3.
