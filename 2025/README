@@ -11,4 +11,4 @@ The `/data` folder contains
 - `NACA63018_windtunnel.xlsx`: Acoustic and aerodynamic results from windtunnel campaign.
 - `FFA_W3_211_windtunnel.xlsx`: Acoustic and aerodynamic results from windtunnel campaign.
 
-The acoustic results are given as integrated spectra in 1/3 octave bands, scaled to 1m span, at observer distance 2.3.
+The acoustic results are given as integrated spectra in 1/3 octave bands, scaled to 1m span, at observer distance 2.3. The microphone array was positioned on the suction side of the airfoil.
