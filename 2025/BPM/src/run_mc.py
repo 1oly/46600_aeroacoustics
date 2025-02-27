@@ -33,4 +33,4 @@ if __name__ == "__main__":
     # Run the Monte Carlo simulation
     results = monte_carlo_simulation(params)
     # Save the results to a CSV file
-    results.to_csv('{params.outputfilename}.csv', index=False)
+    results.to_csv(f'{params.outputfilename}.csv', index=False)
